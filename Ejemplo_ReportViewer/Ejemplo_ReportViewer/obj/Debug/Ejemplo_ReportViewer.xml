@@ -1,0 +1,411 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ejemplo_ReportViewer
+</name>
+</assembly>
+<members>
+<member name="T:Ejemplo_ReportViewer.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Ejemplo_ReportViewer.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:Ejemplo_ReportViewer.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:Ejemplo_ReportViewer.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:Ejemplo_ReportViewer.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:Ejemplo_ReportViewer.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDS._Clientes_csvDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDS._Clientes_csvRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDS._Clientes_csvRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDSTableAdapters.Clientes_csvTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager.UpdateUpdatedRows(Ejemplo_ReportViewer.ClientesDS,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager.UpdateInsertedRows(Ejemplo_ReportViewer.ClientesDS,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager.UpdateDeletedRows(Ejemplo_ReportViewer.ClientesDS,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager.UpdateAll(Ejemplo_ReportViewer.ClientesDS)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.ClientesDSTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSet._Productos_csvDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSet._Productos_csvRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSet._Productos_csvRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSetTableAdapters.Productos_csvTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Ejemplo_ReportViewer.DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Ejemplo_ReportViewer.DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Ejemplo_ReportViewer.DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager.UpdateAll(Ejemplo_ReportViewer.DataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:Ejemplo_ReportViewer._Default._form1">
+<summary>
+Control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Ejemplo_ReportViewer._Default._ScriptManager1">
+<summary>
+Control ScriptManager1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Ejemplo_ReportViewer._Default._ReportViewer1">
+<summary>
+Control ReportViewer1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Ejemplo_ReportViewer._Default._ObjectDataSource1">
+<summary>
+Control ObjectDataSource1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:Ejemplo_ReportViewer._Default._ObjectDataSource2">
+<summary>
+Control ObjectDataSource2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaCliente">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaCliente._Clientes_csvDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaCliente._Clientes_csvRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaCliente._Clientes_csvRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClienteTableAdapters.Clientes_csvTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager.UpdateUpdatedRows(Ejemplo_ReportViewer.tablaCliente,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager.UpdateInsertedRows(Ejemplo_ReportViewer.tablaCliente,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager.UpdateDeletedRows(Ejemplo_ReportViewer.tablaCliente,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager.UpdateAll(Ejemplo_ReportViewer.tablaCliente)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClienteTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientes">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientes._Clientes_csvDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientes._Clientes_csvRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientes._Clientes_csvRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientesTableAdapters.Clientes_csvTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager.UpdateUpdatedRows(Ejemplo_ReportViewer.tablaClientes,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager.UpdateInsertedRows(Ejemplo_ReportViewer.tablaClientes,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager.UpdateDeletedRows(Ejemplo_ReportViewer.tablaClientes,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager.UpdateAll(Ejemplo_ReportViewer.tablaClientes)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaClientesTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductos">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductos._Productos_csvDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductos._Productos_csvRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductos._Productos_csvRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductosTableAdapters.Productos_csvTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager.UpdateUpdatedRows(Ejemplo_ReportViewer.tablaProductos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager.UpdateInsertedRows(Ejemplo_ReportViewer.tablaProductos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager.UpdateDeletedRows(Ejemplo_ReportViewer.tablaProductos,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager.UpdateAll(Ejemplo_ReportViewer.tablaProductos)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Ejemplo_ReportViewer.tablaProductosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
